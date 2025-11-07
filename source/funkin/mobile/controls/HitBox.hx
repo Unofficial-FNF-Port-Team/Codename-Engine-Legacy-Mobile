@@ -107,7 +107,7 @@ function createHitbox(x:Float, y:Float, width:Int, height:Int, color:String, ?is
     function createHitboxGraphic(Width:Int, Height:Int):FlxGraphic {
         var shape:Shape = new Shape();
         shape.graphics.beginFill(0xFFFFFF);
-        
+        // can we just remove this? hurts my eyes
         shape.graphics.lineStyle(3, 0xFFFFFF, 1);
         shape.graphics.drawRect(0, 0, Width, Height);
         shape.graphics.lineStyle(0, 0, 0);
