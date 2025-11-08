@@ -27,7 +27,7 @@ class OptionsMenu extends TreeMenu {
 		},
 		{
 			name: 'Mobile Controls >',
-			desc: 'Change Mobile Controls...',
+			desc: 'Change Mobile Controls options...',
 			state: MobileOptions
 		},
 		{
@@ -47,7 +47,6 @@ class OptionsMenu extends TreeMenu {
 		DiscordUtil.call("onMenuLoaded", ["Options Menu"]);
 
 		bg = new FlxSprite(-80).loadAnimatedGraphic(Paths.image('menus/menuBGBlue'));
-		// bg.scrollFactor.set();
 		bg.scale.set(1.15, 1.15);
 		bg.updateHitbox();
 		bg.screenCenter();
