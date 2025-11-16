@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 	<app
-		title="FNF' - Codename Engine" main="funkin.backend.system.Main"
+		title="FNF' - Codename Engine Legacy" main="funkin.backend.system.Main"
 		file="CodenameEngineLegacy" packageName="com.yoshman29.codenameenginelegacy"
 		package="com.yoshman29.codenameenginelegacy"
 		version="0.1.0 Legacy" company="Yoshman29" />
@@ -38,7 +38,7 @@
 	<window if="mac" allow-high-dpi="true" />
 
 	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" resizable="false" allow-shaders="true" require-shaders="true" allow-high-dpi="true" />
+	<window if="mobile" orientation="landscape" fullscreen="true" resizable="false" allow-shaders="true" require-shaders="true" allow-high-dpi="true"/>
 
 	<!--Switch-specific-->
 	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
