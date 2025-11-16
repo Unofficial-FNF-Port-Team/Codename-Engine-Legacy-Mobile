@@ -48,10 +48,13 @@ class AppearanceOptions extends OptionsScreen {
 			"If checked, switching windows will pause the game.",
 			"autoPause"));
     #if mobile
-	 MusicBeatState.instance.addVPad(FULL, A_B);
-	 MusicBeatState.instance.addVPadCamera();
+		  MusicBeatState.instance.removeVPad();
+		new FlxTimer().start(0.5, function(tmr:FlxTimer) {
+		  MusicBeatState.instance.addVPad(UP_DOWN, A_B);
+		  MusicBeatState.instance.addVPadCamera();
+		});
 	 #end
-	}
+}
 
 	private function __changeFPS(change:Float) {
 		// if statement cause of the flixel warning
